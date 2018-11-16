@@ -5,3 +5,6 @@ div {
     margin: 50px;
     text-align: justify;
 }
+div {
+    font-family: "Arial", Times, sans-serif;
+}
