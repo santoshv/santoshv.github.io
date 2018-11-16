@@ -2,9 +2,10 @@ p {
     margin: 0px;
 }
 div {
-    margin: 50px;
+    margin: 100px;
     text-align: justify;
+    font-family: "Arial", Times, sans-serif;
 }
 div {
-    font-family: "Arial", Times, sans-serif;
+    line-height: 1.6;
 }
