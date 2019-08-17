@@ -8,7 +8,7 @@
 %\usepackage{latexsym}
 %\usepackage{xypic}
 %\usepackage{float}    
-\newcommand{\problem}[1]{\vspace{.1in} \noindent {\bf #1}.\\ }
+\newcommand{\problem}[2]{\vspace{.1in} \noindent {\bf #1}. [#2 points]\\ }
 \newcommand{\problemname}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] \\ }
 \newcommand{\problemnameno}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] No explanation necessary. \\ }
 \parindent0em
@@ -22,20 +22,20 @@
 \title{CS4510: HW1}
 
 
-\date{Due: Aug 26th before 3pm on Canvas.}
+\date{Due: Aug 26th before 3pm on Canvas/Gradescope.}
 
 \begin{document}
 
 \maketitle
 
-\problem{1. Recognition}
-Write a program (in your favorite language or pseodo-code) that takes as input a finite binary string and outputs ``YES" if the string contains one of the following as a substring (in consecutive positions) and outputs ``NO" if it does not: $\{010, 101, 0110, 1001\}$. Prove that your program is correct on all possible input binary strings.
+\problem{1. Recognition}{2}
+Write a program (in your favorite language or pseudocode) that takes as input a finite binary string and outputs ``YES" if the string contains one of the following as a substring (in consecutive positions) and outputs ``NO" if it does not: $\{010, 101, 0110, 1001\}$. Prove that your program is correct on all possible input binary strings.
 
-\problem{2. Meta-Recognition}
+\problem{2. Meta-Recognition}{2}
 Write a program that takes as input a finite list of binary strings and outputs a program that takes a binary string as input and outputs ``YES" if it contains a string on the list as a substring and ``NO" otherwise. 
 
-\problem{3. Space and Time}
-How much space (memory) does your first program take on inputs with $n$ bits? How much time does it take as a function on $n$? Make all your assumptions explicit. 
+\problem{3. Space and Time}{2}
+How much space (memory) does your first program take on inputs with $n$ bits? How much time does it take as a function on $n$? Make all your assumptions explicit. You can use $O(.)$ notation. 
 
 (Bonus) What about your second program?  
 
