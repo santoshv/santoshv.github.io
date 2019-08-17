@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.1.8)  17 AUG 2019 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.1.8)  17 AUG 2019 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -135,7 +135,7 @@ Here is how much of TeX's memory you used:
 mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2018/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb>
-Output written on HW1.pdf (1 page, 53640 bytes).
+Output written on HW1.pdf (1 page, 53652 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
