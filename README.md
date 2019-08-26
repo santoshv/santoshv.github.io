@@ -1,2 +1,0 @@
-# santoshv.github.io
-webpages
