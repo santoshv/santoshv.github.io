@@ -5,10 +5,12 @@
 %\usepackage{epsfig}
 \usepackage{amssymb, amsmath}
 \usepackage{amsfonts}
+\usepackage{geometry}
 %\usepackage{latexsym}
 %\usepackage{xypic}
 %\usepackage{float}    
 \usepackage{fullpage}
+\usepackage{tikz}
 \newcommand{\problem}[2]{\vspace{.1in} \noindent {\bf #1}. [#2 points]\\ }
 \newcommand{\problemname}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] \\ }
 \newcommand{\problemnameno}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] No explanation necessary. \\ }
@@ -30,26 +32,27 @@ and include the names of all students you talk to.}
 
 \begin{document}
 
+\author{}
 \maketitle
 
 \problem{1. XOR}{2}
-Construct a DFA that represents the XOR of two languages $L_1$ and $L_2$.
+Construct a DFA that represents the XOR of two regular languages $L_1$ and $L_2$.
 
-Construct a minimal DFA that represents the XOR of two languages $L_1$ (bitstrings of
+Construct a DFA that represents the XOR of two languages $L_1$ (bitstrings of
 even length) and $L_2$ (bitstrings with odd number of 1’s).
 
 \problem{2. Integers and Floats}{2}
 Construct a DFA that accepts integer/float numbers.
 
 An integer number is defined as:
-\begin{itemize} \itemsep -2pt
+\begin{itemize} \itemsep -2pt 
     \item A string leading with an optional + or -
-    \item Followed by a single zero or non-empty sequence of digits that doesn’t start with a zero
+    \item Followed by a single zero or non-empty sequence of digits that doesn't start with zero
 \end{itemize}
 A float number is defined as:
 \begin{itemize} \itemsep -2pt
     \item A string leading with an optional + or -
-    \item Followed by a single zero or non-empty sequence of digits that doesn’t start with a zero
+    \item Followed by a single zero or non-empty sequence of digits that doesn't start with zero
     \item Followed by a decimal point
     \item Followed by a non-empty sequence of digits
 \end{itemize}
