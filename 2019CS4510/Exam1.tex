@@ -5,6 +5,7 @@
 %\usepackage{epsfig}
 \usepackage{amssymb, amsmath}
 \usepackage{amsfonts}
+\usepackage{array}
 %\usepackage{latexsym}
 %\usepackage{xypic}
 %\usepackage{float}    
@@ -19,6 +20,15 @@
 \markboth{\hfill Name: \hspace{2in} \hfill}{Name:  \hspace{2in}  \hfill} 
 %\markboth{ Name: \hspace{2in} \hfill}
 
+\newcommand{\emptybox}[2][\textwidth]{%
+  \begingroup
+  \setlength{\fboxsep}{-\fboxrule}%
+  \noindent\framebox[#1]{\rule{0pt}{#2}}%
+  \endgroup
+}
+
+\hyphenpenalty 10000
+
 \begin{document}
 
 
@@ -26,7 +36,7 @@ Note: No textbook or notes to be used during the exam.\\
 
 \problemnameno{1. Finite Automaton}{10}
 
-Give a single finite automaton (DFA or NFA) that accepts the language $L = \{ x \, | \, x = (0101)^*(1010)^* \mbox{ or } x = (1010)^*(0101)^*\}$.
+Give a single finite automaton (DFA or NFA) that accepts the language consisting of all strings of the form $(0101)^*(1010)^*$ or $(1010)^*(0101)^*$.
 
 
 
@@ -49,15 +59,16 @@ Prove that the set of finite python programs is countable.
 
 \problemnameno{4. True or False}{10}
 
-Indicate whether each of the following is True (T) or False (F). 
+Indicate whether each of the following is True (T) or False (F). \\
 
-\begin{itemize}
-\item Nondeterministic TMs are more powerful (i.e., accept more languages) than Deterministic TMs
-\item Nondeterministic Finite Automata are more powerful (i.e., accept more languages)  than Deterministic Finite Automata
-\item For any set of strings $L$, there is a TM that can correctly determine whether a given string $x$ belongs to $L$.
-\item Every TM will eventually halt on the input string consisting of a single zero.
-\item The Pumping Lemma can be used to show that a language is not decidable.
-\end{itemize}
+\renewcommand{\arraystretch}{2}
+\begin{tabular} {m{1cm}m{5in}}
+\emptybox[35pt]{20pt} & Nondeterministic TMs are more powerful, i.e., can accept more langugages, than Deterministic TMs\\
+\emptybox[35pt]{20pt} & Nondeterministic Finite Automata are more powerful, i.e., can accept more languages, than Deterministic Finite Automata \\
+\emptybox[35pt]{20pt} & For any set of strings L, there is a TM that can correctly determine whether a given string $x$ belongs to L \\
+\emptybox[35pt]{20pt} & Every TM with the binary input alphabet will eventually halt on the input string consisting of a single zero.  \\
+\emptybox[35pt]{20pt} & The Pumping Lemma can be used to show that a language is not decidable. 
+\end{tabular}
 
  
 
