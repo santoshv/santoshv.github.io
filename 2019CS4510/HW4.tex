@@ -1,0 +1,54 @@
+ \documentclass[12pt]{article}
+
+%\usepackage{clrscode}
+%\usepackage{alltt}
+%\usepackage{epsfig}
+\usepackage{amssymb, amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+%\usepackage{latexsym}
+%\usepackage{xypic}
+%\usepackage{float}    
+\usepackage{fullpage}
+\usepackage{tikz}
+\newcommand{\problem}[2]{\vspace{.1in} \noindent {\bf #1}. [#2 points]\\ }
+\newcommand{\problemname}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] \\ }
+\newcommand{\problemnameno}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] No explanation necessary. \\ }
+\parindent0em
+%\newcommand{\s}{\hspace*{1em}}          
+%\renewcommand{\Comment}[1]{}
+
+%\pagestyle{myheadings}         
+%\markboth{\hfill Name: \hspace{2in} \hfill}{Name:  \hspace{2in}  \hfill} 
+%\markboth{ Name: \hspace{2in} \hfill}
+
+\title{CS4510: HW4}
+
+
+\date{Due: Oct 2 before 3pm on Gradescope (there is a link on Canvas)\\
+Separate page for each problem\\
+You should write the solutions on your own, \\
+and include the names of all students you talk to.}
+
+\begin{document}
+
+\author{}
+\maketitle
+
+\problem{1. Single Start}{2}
+ Suppose that $P$ is a PFA that instead of having a start state, has a probability
+ distribution over which state it will start in. Construct a new PFA $P'$ that has a
+ single start state and outputs the same strings with the same probabilities as $P$.
+
+\problem{2. Steady State}{2}
+Consider the PFA with 4 states $A_1, A_2, B_1, B_2$. There are transitions $(A_i, B_j)$
+and $(B_j, A_i)$ for each pair $(i,j)$. Show that this PFA does not reach a steady state
+distribution from some starting distributions/states. Now add the transition $(A_i, A_i)$
+with positive probability. Show that it will now reach a steady state from any starting
+distribution.
+
+\problem{3. Applications}{2}
+Investigate one real-world application of PFAs (Hidden Markov Models) and report back on
+their history, success and status (1 page limit). 
+
+\end{document}
