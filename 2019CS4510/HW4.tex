@@ -40,6 +40,10 @@ and include the names of all students you talk to.}
  distribution over which state it will start in. Construct a new PFA $P'$ that has a
  single start state and outputs the same strings with the same probabilities as $P$.
 
+ \textit{Clarification:} For this problem, you need to output a letter for every transition
+ in the PFA, otherwise the problem becomes trivial. Transitions that output the empty
+ symbol will be considered invalid.
+
 \problem{2. Steady State}{2}
 Consider the PFA with 4 states $A_1, A_2, B_1, B_2$. There are transitions $(A_i, B_j)$
 and $(B_j, A_i)$ for each pair $(i,j)$. Show that this PFA does not reach a steady state
