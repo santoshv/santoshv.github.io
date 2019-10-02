@@ -1,0 +1,49 @@
+ \documentclass[12pt]{article}
+
+%\usepackage{clrscode}
+%\usepackage{alltt}
+%\usepackage{epsfig}
+\usepackage{amssymb, amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+%\usepackage{latexsym}
+%\usepackage{xypic}
+%\usepackage{float}    
+\usepackage{fullpage}
+\usepackage{tikz}
+\newcommand{\problem}[2]{\vspace{.1in} \noindent {\bf #1}. [#2 points]\\ }
+\newcommand{\problemname}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] \\ }
+\newcommand{\problemnameno}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] No explanation necessary. \\ }
+\parindent0em
+%\newcommand{\s}{\hspace*{1em}}          
+%\renewcommand{\Comment}[1]{}
+
+%\pagestyle{myheadings}         
+%\markboth{\hfill Name: \hspace{2in} \hfill}{Name:  \hspace{2in}  \hfill} 
+%\markboth{ Name: \hspace{2in} \hfill}
+
+\title{CS4510: HW5}
+
+
+\date{Due: Oct 9 before 3pm on Gradescope (there is a link on Canvas)\\
+Separate page for each problem\\
+You should write the solutions on your own, \\
+and include the names of all students you talk to.}
+
+\begin{document}
+
+\author{}
+\maketitle
+
+\problem{1. Counting DFA's}{2}
+a. Given a set of $Q = \{q_1, ..., q_n\}$, how many functions $\delta: Q \times \{0,1\} \rightarrow Q$ are there?
+
+b. Give an algorithm which, when given two disjoint sets of strings, finds the smallest DFA that accepts all the elements of the first set and rejects all the elements of the second. (Note: this is NOT Angluin's algorithm.) Is the time complexity of this algorithm polynomial in $n$ if the smallest DFA has $n$ states? Why or why not?
+
+\problem{2. Angluin's algorithm}{2}
+Run Angluin's algorithm to learn the language $L_1 \cup L_2$ where $L_1$ is the set of strings of even length and $L_2$ is the set of strings with an even number of ones. Show each DFA submitted in an equivalence query, the corresponding state of the observation table, and the counterexample returned (if appropriate). Assume that the counterexamples returned are always of minimum length.
+
+\problem{3. Myhill-Nerode}{2}
+When running Angluin's algorithm to learn the language $L$, show that strings in $S$ whose rows are different belong to different equivalence classes (from the Myhill-Nerode theorem).
+
+\end{document}
