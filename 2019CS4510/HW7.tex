@@ -1,0 +1,56 @@
+ \documentclass[12pt]{article}
+
+%\usepackage{clrscode}
+%\usepackage{alltt}
+%\usepackage{epsfig}
+\usepackage{amssymb, amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+%\usepackage{latexsym}
+%\usepackage{xypic}
+%\usepackage{float}    
+\usepackage{fullpage}
+\usepackage{tikz}
+\newcommand{\problem}[2]{\vspace{.1in} \noindent {\bf #1}. [#2 points]\\ }
+\newcommand{\problemname}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] \\ }
+\newcommand{\problemnameno}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] No explanation necessary. \\ }
+\parindent0em
+%\newcommand{\s}{\hspace*{1em}}          
+%\renewcommand{\Comment}[1]{}
+
+%\pagestyle{myheadings}         
+%\markboth{\hfill Name: \hspace{2in} \hfill}{Name:  \hspace{2in}  \hfill} 
+%\markboth{ Name: \hspace{2in} \hfill}
+
+\title{CS4510: HW7}
+
+
+\date{Due: Nov 6 before 3pm on Gradescope (there is a link on Canvas)\\
+Separate page for each problem\\
+You should write the solutions on your own, \\
+and include the names of all students you talk to.}
+
+\begin{document}
+
+\author{}
+\maketitle
+
+\problem{1. Undecidability}{2}
+Define a useless state of a Turing Machine to be one that is never entered for any input. Show that L = $\{(\langle M\rangle, q) : M$ is a Turing Machine description and $q$ is a useless state of $M\}$ is undecidable.
+
+Hint: Suppose you are given a random Turing Machine $T$ and an input $x$. Make a new Turing Machine $T'$ out of $T$, and show that deciding some useless state of $T'$ allows you to decide whether $T$ accepts $x$.
+
+\problem{2. Space and Time hierarchy}{2}
+Show that $NSPACE(\log n)$ is a \emph{strict} subset of $DTIME(n^{\log^2n})$.
+
+\problem{3. Graph search}{2}
+Let $G$ be a graph, and let $\alpha \in \mathbb{R}^+$. We call $G$ an $\alpha$-expander if every $S \subseteq V$ with $|S| \leq \frac{|V|}{2}$ has at least $\alpha * |S|$ vertices outside of $S$.
+\newline \newline
+a. Show that, for any $u,v \in V$, the distance from $u$ to $v$ is $O(\log_{1+\alpha}|V|)$. 
+	
+b. The space complexity for determining if there is a path between $u$ and $v$ of length at most $k$ for any two vertices $u$ and $v$ in an $\alpha$-expander graph $G$ is $O(\log|V|*\log(\log(|V|)))$. Explain.
+	
+Hint: Recall the proof of Savitch's Theorem.
+
+
+\end{document}
