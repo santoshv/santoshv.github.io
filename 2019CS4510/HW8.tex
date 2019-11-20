@@ -1,0 +1,62 @@
+ \documentclass[12pt]{article}
+
+%\usepackage{clrscode}
+%\usepackage{alltt}
+%\usepackage{epsfig}
+\usepackage{amssymb, amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+%\usepackage{latexsym}
+%\usepackage{xypic}
+%\usepackage{float}    
+\usepackage{fullpage}
+\usepackage{tikz}
+\usepackage{enumitem}
+\newcommand{\problem}[2]{\vspace{.1in} \noindent {\bf #1}. [#2 points]\\ }
+\newcommand{\problemname}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] \\ }
+\newcommand{\problemnameno}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] No explanation necessary. \\ }
+\parindent0em
+%\newcommand{\s}{\hspace*{1em}}          
+%\renewcommand{\Comment}[1]{}
+
+%\pagestyle{myheadings}         
+%\markboth{\hfill Name: \hspace{2in} \hfill}{Name:  \hspace{2in}  \hfill} 
+%\markboth{ Name: \hspace{2in} \hfill}
+
+\title{CS4510: HW8}
+
+
+\date{Due: Nov 18 before noon on Gradescope (there is a link on Canvas)\\
+Separate page for each problem\\
+You should write the solutions on your own, \\
+and include the names of all students you talk to.}
+
+\begin{document}
+
+\author{}
+\maketitle
+
+\problem{1. Dominating Set}{2}
+Prove that the {\em Dominating Set} problem is NP-complete.\\
+A subset of vertices $S$ of of an undirected graph $G$ is called a dominating set if every other vertex in $G$ is
+adjacent to some vertex in the subset $S$.\\
+$Dominating~Set = \{\langle G,k\rangle: G \text{ has a dominating set with at most $k$
+vertices}\}$
+
+\problem{2. Cuts}{2}
+A cut is a partition of vertices of a graph into two disjoint subsets, and the size of a
+cut is defined as the number of edges crossing the cut.\\
+Given a graph $G=(V,E)$ and an integer $k$, decide whether there exists a cut of size at
+most $k$. Show that the language for this decision problem is in NP and co-NP. Explain your answer.
+
+\problem{3. Bow Ties are Cool}{2}
+A bowtie is a graph on an even number of vertices, say $2k$, in which there are two disjoint
+cliques of size $k$ with exactly one edge between the 2 cliques.\\
+
+BOWTIE Problem\\
+\textit{Input}: An undirected graph $G=(V,E)$ and an integer goal $k$.\\
+\textit{Output}: YES if there exists a bowtie of size $2k$ as an induced subgraph of $G$ , i.e., there are disjoint subsets $S$ and $T$ of $V$ which are both cliques of size $k$ and have exactly one edge between them,\\
+or NO, if no bowtie of $2k$ vertices exists in $G$.\\
+Prove that BOWTIE is NP-complete.
+
+\end{document}

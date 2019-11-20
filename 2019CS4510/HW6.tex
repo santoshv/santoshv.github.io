@@ -1,0 +1,47 @@
+ \documentclass[12pt]{article}
+
+%\usepackage{clrscode}
+%\usepackage{alltt}
+%\usepackage{epsfig}
+\usepackage{amssymb, amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+%\usepackage{latexsym}
+%\usepackage{xypic}
+%\usepackage{float}    
+\usepackage{fullpage}
+\usepackage{tikz}
+\newcommand{\problem}[2]{\vspace{.1in} \noindent {\bf #1}. [#2 points]\\ }
+\newcommand{\problemname}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] \\ }
+\newcommand{\problemnameno}[2]{\vspace{.1in} \noindent {\bf Problem #1}. [#2 points] No explanation necessary. \\ }
+\parindent0em
+%\newcommand{\s}{\hspace*{1em}}          
+%\renewcommand{\Comment}[1]{}
+
+%\pagestyle{myheadings}         
+%\markboth{\hfill Name: \hspace{2in} \hfill}{Name:  \hspace{2in}  \hfill} 
+%\markboth{ Name: \hspace{2in} \hfill}
+
+\title{CS4510: HW6}
+
+
+\date{Due: Oct 18 before noon on Gradescope (there is a link on Canvas)\\
+Separate page for each problem\\
+You should write the solutions on your own, \\
+and include the names of all students you talk to.}
+
+\begin{document}
+
+\author{}
+\maketitle
+
+\problem{1. CFG/PDA}{2}
+Write a context free grammar for $\{0^i1^j0^k~|~j>i+k\}$.\\Describe a pushdown automata for it.
+
+\problem{2. Closure}{2}
+Give a CFG for the language  $(\{0^n1^n\}^* \cup \{(01)^m(10)^m\}.\{(10)^p\})^*$. 
+
+\problem{3. Not Context Free}{2}
+Prove that $\{1^n: n\text{ is prime}\}$ is not context free.
+
+\end{document}
